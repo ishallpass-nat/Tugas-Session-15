@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1</title>
+    <style>
+        body{
+            max-width: 200px;
+            max-width: 400px;
+            margin: 40px auto;
+            padding:20px;
+            line-height: 1.6;
+
+        }
+        button{
+            padding: 10px 16px;
+            cursor: pointer;
+
+        }
+        #tips{
+            margin-top: 16px;
+            padding: 15px;
+            background-color: #f0f5f1;
+            border-left: 4px #0f6a4a;
+
+        }
+    </style>
+</head>
+<body>
+<h1>
+    customer registration form
+</h1>
+    <p>
+        Latihan menggunakan Javascript
+    </p>
+    <button id="togglebutton" type "button">
+        Tampilkan Petunjuk
+    </button>
+    <div id="tips" hidden>
+            <strong>petunjuk pengisian</strong>
+            <p>
+                isi nama lengkap dan email dengan benar sebelum mengisi formulir
+            </p>
+    </div>
+    <script>
+        console.log("javascript berhasil dimuat");
+
+        const togglebutton = document.querySelector("#togglebutton");
+        const tips = document.querySelector("#tips");
+
+        //alert("test");
+        togglebutton.addEventListener("click", function(){
+            tips.hidden = !tips.hidden;
+
+            console.log("tombol diklik");
+
+
+        });
+    </script>
+</body>
+</html>
